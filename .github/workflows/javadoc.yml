@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js 12
         uses: actions/setup-node@8de2f9f
         with:
-          node-version: 12
+          node-version: 26.13.1
       - name: Generate Groovydoc
         run: ./gradlew groovydoc
       - name: Prepare to Deploy

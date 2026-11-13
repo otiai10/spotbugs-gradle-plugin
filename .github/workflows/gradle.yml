@@ -24,9 +24,11 @@ jobs:
       with:
         java-version: 11
     - name: Set up Node.js 12
-      uses: actions/setup-node@8de2f9f
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
       with:
-        node-version: 26.13.1
+        node-version: '26'
+        check-latest: true
+        package-manager-cache: false
     - uses: actions/cache@cffae95
       with:
         path: ~/.gradle/caches
